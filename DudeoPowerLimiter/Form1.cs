@@ -24,12 +24,17 @@ namespace DudeoPowerLimiter
 
         private void ApplyPowerLimit_Click(object sender, EventArgs e)
         {
-            
+            SetLimits.SetLimit(CpuPowerSlider.Value * 10);
         }
 
         private void RemoveLimit_Click(object sender, EventArgs e)
         {
             SetLimits.SetLimit(100);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

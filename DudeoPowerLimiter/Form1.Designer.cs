@@ -33,6 +33,7 @@
             ApplyPowerLimit = new Button();
             Set99 = new Button();
             RemoveLimit = new Button();
+            Github = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)CpuPowerSlider).BeginInit();
             SuspendLayout();
             // 
@@ -86,11 +87,22 @@
             RemoveLimit.UseVisualStyleBackColor = true;
             RemoveLimit.Click += RemoveLimit_Click;
             // 
+            // Github
+            // 
+            Github.AutoSize = true;
+            Github.Location = new Point(12, 444);
+            Github.Name = "Github";
+            Github.Size = new Size(76, 20);
+            Github.TabIndex = 5;
+            Github.TabStop = true;
+            Github.Text = "linkLabel1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(865, 473);
+            Controls.Add(Github);
             Controls.Add(RemoveLimit);
             Controls.Add(Set99);
             Controls.Add(ApplyPowerLimit);
@@ -98,6 +110,7 @@
             Controls.Add(CpuPowerSlider);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)CpuPowerSlider).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -110,5 +123,6 @@
         private Button ApplyPowerLimit;
         private Button Set99;
         private Button RemoveLimit;
+        private LinkLabel Github;
     }
 }
