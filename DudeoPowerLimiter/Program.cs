@@ -30,13 +30,13 @@ namespace DudeoPowerLimiter
             contextMenu.Items.Add("Remove Limit", null, RemoveLimit);
             contextMenu.Items.Add("Exit", null, Exit);
 
-           /* trayIcon = new NotifyIcon()
+            trayIcon = new NotifyIcon()
             {
-                Icon = Form1.CobaltBattery,
+                Icon = ShadowForm.CobaltBattery,
                 ContextMenuStrip = contextMenu,
                 Text = "Dudeo Power Limiter",
                 Visible = true
-            };*/
+            };
             //trayIcon.DoubleClick += OpenSettings;
         }
         private void OpenSettings(object sender, EventArgs e)

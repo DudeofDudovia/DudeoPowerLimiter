@@ -28,6 +28,7 @@ namespace DudeoPowerLimiter
             CurrentLimit.Text = (CpuPowerSlider.Value * 10).ToString() + "%";
             LimitValues.LastLimit = CpuPowerSlider.Value * 10;
             File.WriteAllText(SaveHelper.SaveFile, (CpuPowerSlider.Value * 10).ToString());
+            File.WriteAllText(SaveHelper.SaveSlider, (CpuPowerSlider.Value * 10).ToString());
         }
 
         private void Unlimit_Click(object sender, EventArgs e)
