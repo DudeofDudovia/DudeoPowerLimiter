@@ -35,5 +35,10 @@ namespace DudeoPowerLimiter
             CurrentLimit.Text = "100%";
             File.WriteAllText(SaveHelper.SaveFile, 100.ToString());
         }
+
+        private void CpuPowerSlider_Scroll(object sender, EventArgs e)
+        {
+            SliderVal.Text = (CpuPowerSlider.Value * 10).ToString() + "%";
+        }
     }
 }

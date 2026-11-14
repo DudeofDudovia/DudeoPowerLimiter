@@ -79,6 +79,7 @@
             CpuPowerSlider.Size = new Size(461, 56);
             CpuPowerSlider.TabIndex = 3;
             CpuPowerSlider.Value = 5;
+            CpuPowerSlider.Scroll += CpuPowerSlider_Scroll;
             // 
             // SliderVal
             // 
