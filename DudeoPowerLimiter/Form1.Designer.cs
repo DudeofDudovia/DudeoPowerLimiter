@@ -136,6 +136,7 @@
             RunCMD.TabIndex = 9;
             RunCMD.TabStop = true;
             RunCMD.Text = "Running Commands Credit";
+            RunCMD.LinkClicked += RunCMD_LinkClicked;
             // 
             // Form1
             // 
@@ -154,6 +155,7 @@
             Controls.Add(Unlimit);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)CpuPowerSlider).EndInit();
             ResumeLayout(false);
             PerformLayout();
