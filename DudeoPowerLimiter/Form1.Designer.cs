@@ -84,7 +84,7 @@
             // SliderVal
             // 
             SliderVal.AutoSize = true;
-            SliderVal.Location = new Point(436, 43);
+            SliderVal.Location = new Point(212, 43);
             SliderVal.Name = "SliderVal";
             SliderVal.Size = new Size(37, 20);
             SliderVal.TabIndex = 4;
@@ -102,7 +102,7 @@
             // CurrentLimit
             // 
             CurrentLimit.AutoSize = true;
-            CurrentLimit.Location = new Point(212, 43);
+            CurrentLimit.Location = new Point(436, 46);
             CurrentLimit.Name = "CurrentLimit";
             CurrentLimit.Size = new Size(37, 20);
             CurrentLimit.TabIndex = 6;
