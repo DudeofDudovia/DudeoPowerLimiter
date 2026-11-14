@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Unlimit = new Button();
             ApplyLimit = new Button();
             set99 = new Button();
@@ -154,6 +155,7 @@
             Controls.Add(set99);
             Controls.Add(ApplyLimit);
             Controls.Add(Unlimit);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
