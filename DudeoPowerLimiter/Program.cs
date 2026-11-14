@@ -10,8 +10,8 @@ namespace DudeoPowerLimiter
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            /*ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());*/
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Form1());
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TrayApplicationContext());
@@ -28,13 +28,13 @@ namespace DudeoPowerLimiter
             contextMenu.Items.Add("Remove Limit", null, RemoveLimit);
             contextMenu.Items.Add("Exit", null, Exit);
 
-            trayIcon = new NotifyIcon()
+           /* trayIcon = new NotifyIcon()
             {
                 Icon = Form1.CobaltBattery,
                 ContextMenuStrip = contextMenu,
                 Text = "Dudeo Power Limiter",
                 Visible = true
-            };
+            };*/
             trayIcon.DoubleClick += OpenSettings;
         }
         private void OpenSettings(object sender, EventArgs e)
