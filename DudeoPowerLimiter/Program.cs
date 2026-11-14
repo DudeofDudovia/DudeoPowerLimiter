@@ -13,8 +13,9 @@ namespace DudeoPowerLimiter
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TrayApplicationContext());
+            //Application.Run(new TrayApplicationContext());
+            //Application.SetCompatibleTextRenderingDefault(false);
+
         }
     }
     internal class TrayApplicationContext : ApplicationContext
@@ -35,7 +36,7 @@ namespace DudeoPowerLimiter
                 Text = "Dudeo Power Limiter",
                 Visible = true
             };*/
-            trayIcon.DoubleClick += OpenSettings;
+            //trayIcon.DoubleClick += OpenSettings;
         }
         private void OpenSettings(object sender, EventArgs e)
         {
