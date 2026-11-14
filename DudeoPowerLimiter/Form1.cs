@@ -77,5 +77,14 @@ namespace DudeoPowerLimiter
                 UseShellExecute = true
             });
         }
+
+        private void Github_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://github.com/DudeofDudovia/DudeoPowerLimiter",
+                UseShellExecute = true
+            });
+        }
     }
 }

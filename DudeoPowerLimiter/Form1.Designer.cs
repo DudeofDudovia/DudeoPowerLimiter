@@ -126,6 +126,7 @@
             Github.TabIndex = 8;
             Github.TabStop = true;
             Github.Text = "Github";
+            Github.LinkClicked += Github_LinkClicked;
             // 
             // RunCMD
             // 
