@@ -49,6 +49,7 @@
             Unlimit.TabIndex = 0;
             Unlimit.Text = "Unlimit CPU";
             Unlimit.UseVisualStyleBackColor = true;
+            Unlimit.Click += Unlimit_Click;
             // 
             // ApplyLimit
             // 
@@ -58,6 +59,7 @@
             ApplyLimit.TabIndex = 1;
             ApplyLimit.Text = "Apply Limit";
             ApplyLimit.UseVisualStyleBackColor = true;
+            ApplyLimit.Click += ApplyLimit_Click;
             // 
             // set99
             // 
@@ -67,6 +69,7 @@
             set99.TabIndex = 2;
             set99.Text = "Disable Turbo (99%)";
             set99.UseVisualStyleBackColor = true;
+            set99.Click += set99_Click;
             // 
             // CpuPowerSlider
             // 
